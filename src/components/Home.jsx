@@ -1,6 +1,6 @@
 import React from "react"
 import avatar from '../images/avatar.webp'
-import { FaArrowRightToBracket } from "react-icons/fa6";
+// import { FaArrowRightToBracket } from "react-icons/fa6";
 
 const Home=()=>{
     return (
@@ -14,7 +14,7 @@ const Home=()=>{
                     <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-300 to-blue-600 cursor-pointer">
                         Portfolio
                         <span className="group-hover:rotate-90 duration-300">
-                        <FaArrowRightToBracket size={20} className="ml-2"/>
+                        {/* <FaArrowRightToBracket size={20} className="ml-2"/> */}
                         </span>
                     </button>
                 </div>
