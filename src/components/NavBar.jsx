@@ -1,31 +1,24 @@
 import React, { useState } from "react"
 import{FaBars,FaTimes} from "react-icons/fa"
+import {Link} from "react-scroll"
 
 const NavBar=()=>{
     const links=[
         {
             id:1,
             link:'Home'
-        },
+        },   
         {
             id:2,
-            link:'About'
-        },
-        {
-            id:3,
             link:'Portfolio'
         },
         {
+            id:3,
+            link:'Experiencia'
+        },
+        {
             id:4,
-            link:'Studies'
-        },
-        {
-            id:5,
-            link:'Experience'
-        },
-        {
-            id:6,
-            link:'Contact'
+            link:'Contacto'
         },
     ];
 
@@ -39,8 +32,8 @@ const NavBar=()=>{
 
             <ul className="hidden md:flex">
                 {links.map(({id,link})=>(
-                    <li key={id} className="px-4 cursor-pointer hover:scale-90 font-medium duration-200 text-gray-600">
-                        {link}
+                    <li key={id} className="px-4 cursor-pointer hover:scale-105 font-medium duration-200 text-gray-600">
+                        <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
                 ))}                         
             </ul>
